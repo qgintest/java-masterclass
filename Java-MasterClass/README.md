@@ -47,3 +47,22 @@ String literals cannot be changed and are the simplest form of an expression
 **Operators**
 Operators perform an operation on a variable or value
 +-/*
+
+**Class**
+template of an object OR building blocks of object oriented programming
+
+**Wrapper Class**
+class that provides simple operations and basic information on 
+the prmimitive type itself. all 8 primitive types have their own wrapper classes
+
+int => Integer
+long => Long
+short => Short
+byte => Byte
+double => Double
+boolean => Boolean
+char => Character
+float => Float
+
+Note: if you try to put a value larger than the maximimum 
+value into an int, you will create something called an OverFlow situation , a.k.a Integer wraparounds
