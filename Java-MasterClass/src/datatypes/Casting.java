@@ -1,4 +1,4 @@
-package primitives;
+package datatypes;
 
 public class Casting {
 

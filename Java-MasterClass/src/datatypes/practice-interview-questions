@@ -69,3 +69,33 @@ actual assignment
 
  15. the + symbol as an operator can be used in what ways?
      for numbers, it will add the two numbers, for strings, it will concat the string and everything else
+
+ 16. What happens if you use + on two Char data sets?
+     The numbers in memory get printed out. char is stored as two byte numbers in memory use unicode table to get the numbers
+     Bonus: how do you print two chars as strings? by adding a string literal, ""
+
+
+ 17. What does it mean for String to be immutable?
+    they cannot be changed after they are created.
+
+ 18. Is there a more efficient way to append multiple strings of values instead of using String class?
+    Yes, use StringBuilder. note: cannot use + or literal values
+    StringBuilder is mutuable,
+
+ 19. What are operators, operands, and Expressions?
+    Operators are special symbols that perform specific operations on one or more operands and returns a result
+    Operand is a term used to describe any object that is manipulated by an operator e.g., int num = 1 + 2; the numbers are the operands
+    Expression is formed when combining variables, literals, operators, and method return values
+
+ 20. What is % used for in java?
+     It is used to find the remainder of two operands. so 5 % 5 = 0, because there are no remainders
+
+ 21. What is the difference between the post-fix and compound assingment shorthand operators
+    post-fix; var++; or var--; allows you to by shorthand increment/decrement by the specific number
+    compound-assignment: var+=x does the same but you control the inc/dec value itself
+
+ 22. which line of code will throw an incompatible type error (if any) and why?
+     1: n-=5.5
+     2. n = 6 - 5.5;
+     2nd one because compound operators implicitely cast, but unexpected results may occur
+      bonus: how do we get the result to be 4.5?

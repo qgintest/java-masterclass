@@ -16,6 +16,7 @@
 .idea/**/aws.xml
 
 # Generated files
+.idea/
 .idea/**/contentModel.xml
 
 # Sensitive or high-churn files
@@ -175,3 +176,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/java,intellij+all
+/Java-MasterClass.iml

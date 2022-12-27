@@ -1,4 +1,4 @@
-package primitives;
+package datatypes;
 
 public class StringDataType {
 
@@ -8,6 +8,8 @@ public class StringDataType {
 
         System.out.println("A String: " + myString);
 
+        //for below code, in the background, java is actually assigning a new string and concat it with old string
+        //old string gets discarded from memory
         myString = myString + " and many more";
 
         System.out.println("A String: " + myString);

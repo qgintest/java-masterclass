@@ -1,0 +1,36 @@
+1. What is a statement?
+a complete command to be executed that can include one or more
+more expressions. in java, statements typically end with a ;
+
+2. What is a keyword?
+a keyword is any of a number of reserved keywords that have
+a pre-defined meaning the java language. e.g., int, short, main
+
+3. What is a variable?
+A conatainer that holds a value.
+A means to store information on a computer.
+You give a name and its type and the value to hold
+for example;
+int num = 0;
+
+4. What is an expression?
+An expression is a coding construct, that evaluates to a single value
+e.g., int num = 1 + 2
+everything after the right of the assignment operator is an expression
+
+5. When can String Literals be changed?
+Never. String literals cannot be changed and are the simplest form of an expression
+
+6. What operators can be used with expressions?
+Operators perform an operation on a variable or value
++
+-
+/
+*
+
+7. Can you declare variables of different types in a single statement?
+No
+
+8. T/F: if you declare multiple variables of the same type, you must specify the data type for each variable name?
+F, only specify once or else it will result in compile error.
+

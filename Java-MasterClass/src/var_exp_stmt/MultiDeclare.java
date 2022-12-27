@@ -1,6 +1,6 @@
-package var_exp_stmt.Multi;
+package var_exp_stmt;
 
-public class Declare {
+public class MultiDeclare {
 
     public static void main(String[] args) {
         byte a = 1;
