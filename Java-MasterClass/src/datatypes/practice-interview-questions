@@ -1,0 +1,71 @@
+1. What are the 8 primtiive data types?
+- boolean
+- byte
+- char
+- double
+- float
+- int
+- long
+- short
+
+2. When is L required?
+  a numeric literal that exceeds Integer.MAX_VALUE
+
+3. What are the widths of each primitive type
+   int: 32
+   short: 16
+   byte: 8
+   long: 64
+
+4. What are wrapper classes and how are they different from a primitive type
+
+class that provides simple operations and basic information on
+the prmimitive type itself. all 8 primitive types have their own wrapper classes
+
+int => Integer, java will default numbers to be of an int unless explicitely stated
+long => Long
+short => Short
+byte => Byte
+double => Double
+boolean => Boolean
+char => Character
+float => Float
+
+5. What is over and under flow and which primitive types does it impact?
+if you try to put a value larger than the maximimum
+value into a certain data type, you will create something called an OverFlow situation , a.k.a wraparounds
+this impacts all whole number based primitive types
+
+6. What is casting?
+to treat or convert a number from one type to another. you case the type on the right side of the assignemnt operator before the
+actual assignment
+
+7. What effect does int have on being the default value? errors can return when a smaller data type such as short is being assigned to an int
+
+8. How are floating point data types different from int?
+  they have fractional parts that we express with decimal points. think of them as real numbers often expressed in prices.
+  it is used when more precision is needed in calculations
+  default real/floating type is double but you can also use float.
+  width and precision are discussed for floating point numbers
+
+9. What is the difference between float and double?
+   they are both floating point data types. the difference is the width and precision each can hold
+   float has 32w while double has 64, and double can hold more precision so its more precise. downside is it needs more memory to support it
+
+10. In java, a decimal point literal is by default considered which floating data type?
+    double
+
+11. What would you use if you need even more precision than what double can handle? Think scientific exirmentents or NASA on metrics needed to get rocket off the ground
+    use BigDecimal
+
+12. What is the fundsmental use of char
+   it stores a single value, it can be used to progamtically loop through letters in the alphabet, obtain the last key pressed
+   by a user, etc. char has a width of 16
+
+ 13. how many values are there to assign a value to a char?
+ 3 ways, the literal 'D', unicode rep '/u0044', and the numeric rep 68
+
+ 14. A class that contains a sequence of characters
+
+ 15. the + symbol as an operator can be used in what ways?
+     for numbers, it will add the two numbers, for strings, it will concat the string and everything else

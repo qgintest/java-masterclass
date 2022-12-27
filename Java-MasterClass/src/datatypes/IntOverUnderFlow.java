@@ -1,4 +1,4 @@
-package excercises;
+package primitives;
 
 public class IntOverUnderFlow {
 
