@@ -1,0 +1,47 @@
+1. What is true about expressions in java?
+    an expression computes a single value
+
+2. What about statements?
+     statements are standalone units of work
+     they can contain multiple expressions
+
+3. What are code blocks used for?
+    they are 0+ statements grouped together to achieve a goal
+
+4. what are the exceptions not making a line of code a statement?
+
+5. Why is whitespace used? for readability purposes. having extra spaces veritcally or horizontally around source code
+    is used to make code readable
+
+6. What is a great way to avoid code duplication?
+  methods- use it to write code once and reuse it anywhere in the program
+  java def: a method declares executable code that can be invoked , passing a fixed number of values as arguments
+
+7. Technically, what is the difference between a parameter and an argument?
+   Although used interchangably, parameter is the definition shown in the method declaration while the arugment
+   is the value that is passed to the method.
+
+8. When is a return keyword used?
+   it is used to return a value from a method via the return keyword. make sure to remove the void keyword in the method declaration
+   and provide the method data type it will be returning
+
+9. A method can be a statement or an expression T/F
+    True
+10. Bonus: in some languages, how are methods/functions/procedures defined?
+     method/functions that return a value
+     procedures: don't return a value (void)
+
+11. What decalarations should occur when creating a method
+    - access modifier (public private, default, etc)
+    - return type (void or data type or class)
+    - declaring method name
+    - declaring method parameters (if any)
+    - declaring method block/body using {}
+
+ 12. can a return statement be used if method has declares void in the keyword?
+    YES, it can be used to terminate execution of the method due to some condition
+
+ 13. does java support default values in methods? Nope, but C# does :)
+
+ 14. what is the method the JVM looks for at the beginning of each execution?
+      main

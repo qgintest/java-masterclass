@@ -1,0 +1,81 @@
+1. What are some control flow statements also known as conditional statements?
+   if-then
+   if-then-else
+
+2. difference between = and ==
+   = is the assignment operator, it assigns a value of an expression to the variable on the left of the operator
+   == equality operator tests to see if two operands are considered equal , and returns a boolean value
+
+3. create an if-then statement that does NOT get evaluated.
+      boolean print = false;
+      if(print == true);
+      print('print something');
+      //if you run this above, it will always print something regardless because semicolon is placed on the evaluation line.
+
+4. which statement will print below? 1st, 2nd, both, none?
+    boolean print = false
+
+    if(print == true)
+        print('Print Me');
+        print('No, print me');
+
+    2nd, because only first statement is evaluated from the conidtional logic, subsequent lines are ignored. why? because they are not scoped, a.k.a no block of code {}
+
+ 5. What is the ternary operator?
+    also called conditional operator, has 3 operands
+    operand1 ? operand2: operand3
+    if operand1 is true, it will return operand 2, otherwise, it will return operand3
+
+ 6. What is order of precedence java takes for evaluating expressions?
+     () paranthesis
+     [] Array subscript
+     . member selection
+     ++ unary post increment
+     -- post-decrement
+
+     ++ unary pre-increment    R->L
+     -- unary pre-decrement    R->L
+     +  unary plus             R->L
+     -  unary minus            R->L
+     !  unary logical negation R->L
+     ~ unary bitwise complement R->L
+     (type) unary type cast     R->L
+
+     * multiplication
+     / division
+     % modulus
+
+     + addition
+     - subtraction
+
+     << Bitwise left shift
+     >> Bitwise right shift with sign extension
+     >>> Bitwise right shift with zero extension
+
+     < relational less than
+     <= relational less than or equal to
+     > relational greater than
+     >= relational greater than or equal to
+     instanceof type comparison (objjec only)
+
+     == relational is equal to
+     != relational is not equal to
+
+     &	Bitwise AND	Left to right
+     ^	Bitwise exclusive OR	Left to right
+     |	Bitwise inclusive OR	Left to right
+     &&	Logical AND   Left to right
+
+     ||	Logical OR	Left to right
+     ? :	Ternary conditional	R->L
+     =   Assignment              R->L
+     +=  Addition assignment      R->L
+     -=  Subtraction assignment    R->L
+     *=   Multiplication assignment R->L
+     /=   Division assignment      R->L
+     %=	Modulus assignment         R->L
+
+
+
+
+
