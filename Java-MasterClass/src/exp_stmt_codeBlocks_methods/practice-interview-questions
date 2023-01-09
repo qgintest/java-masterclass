@@ -45,3 +45,13 @@
 
  14. what is the method the JVM looks for at the beginning of each execution?
       main
+
+ 15. What is method overloading?
+    occurs when a class has multiple methods with the same name but different parameters and its type?
+
+ 16. What makes a method signature unique?
+      name
+      number of parameters
+      parameter types
+      order they are declared
+      note: Return type and parameter names are not used when determining method signature
