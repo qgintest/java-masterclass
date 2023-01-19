@@ -1,0 +1,19 @@
+1. A class can be described as what?
+    - a template of an object(s)
+         - a class is like an empty form that gets copied and handed out. after its copied/filled out, the action of that is the object creation. each object is unqiue as it contains
+           different information using the class (form) as a template
+    - a custom data type
+        because you can create variables in the class.
+               this is done via static or non-static. on the class level, static must be used.
+               for static fields, stored in one place in memory. value is accessed by classname.fieldname
+               instance field, not stored in memory. not created until object is created. accessed via object.fieldname
+               think of static like data on a form that doesn't change no matter how many times its copied.
+
+    - a special code block that contains variables and methods
+
+
+2. Object
+    instance/copy of a particular class
+
+3. how to create an object from a class?
+    by using new keyword

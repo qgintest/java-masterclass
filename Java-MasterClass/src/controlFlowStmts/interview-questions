@@ -26,3 +26,18 @@
 8. Where can break statement be used? what does it do?
     transfers control out of enclosing statement.
     can be used in switch statements, and loops
+
+9. What if you want to loop until some condition is met that is NOT associated with a known range of values?
+   use while and do-while loops
+
+10. how is continue different from break;
+    continue will go to the next iteration of loop without executing the remaining code in the previous interation
+    break will exit out of the loop/method
+
+11. What is a local variable?
+    a variable only available in the code block {} where it was declared
+
+12. Variable scope
+    scope describes the accessibility of a variable
+    in-scope means the variable is used by an executing block or any nested block
+    out of scope means the variable is no longer available
