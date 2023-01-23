@@ -9,3 +9,5 @@
 
 - verify is number is even
    number % 2 == 0
+
+- to find the remainder, mostly put larger number on left operand of large % small
