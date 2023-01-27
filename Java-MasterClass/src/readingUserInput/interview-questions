@@ -1,0 +1,20 @@
+1. Describe what the code below is doing
+int intCurrentYear = Integer.parseInt("1999");
+   //below class Integer has a static method called partseInt which takes in string and returns an integer
+
+2. Alternative ways to read from console
+   System.in
+   System.console - reads single line
+   CLI
+   Scanner - described as a simple text scanner, which can parse primitive types and strings
+
+
+3. What is an exception?
+    an error that happens in code (runtime)
+
+4. How do you handle exceptions?
+   creating a code block around the code where the exception might occur.
+   using try-catch-finally keywords allow to catch, handle, and continue your program
+
+5. What is import keyword used for?
+    to expose other java libraries/classes to be used in your code such as java.util.Scanner;
