@@ -1,0 +1,80 @@
+What is null keyword?
+  variable or attr has a type but no reference to an object
+  no instance or object is assigned to the variable or field
+  ** fields with primitive data types are never null **
+  ** fields with a primitive type will get default values assigned by java
+     defaults
+        boolean: false
+        byte/short/int/long/char: 0
+        double/float: 0.0
+
+  what is this keyword used for?
+   refers to the instance that was created when the object was instanitiated
+
+   What is a constructor?
+   used to set default values upon creating the class
+      - default constructor is implicitly created in java if one is not specified. it contains no params/args
+
+   Constructor overloading
+      declaring multiple constructors with different formal parameters
+
+     Constructor chaining:
+       when one constructor explicitely calls another overloaded constructor
+
+
+  Static vs instance variables
+     static - belong to the class
+          useful for storing counters, generating unqiue ids, storing constant values that don't chnage, creating
+          and controlling access to shared resource
+     instance - belong to instance (copy) of class, a.k.a object
+         a.k.a fields, member variables
+
+  Static vs Instance methods
+       static: - belongs to the class
+
+       instance: belongs to instance of the class
+
+  Static vs Instance methods - which to use?
+      1. does it use instance methods/variables?
+          if so, make it nonstatic, or an instance method
+      2. if no, make to static method
+
+
+
+what is POJO? Plain old java object a.k.a bean, Java Bean, Entity
+   DTO: Data Transfer Object
+   a class that only has instance fields
+   it is used to house data, and pass data between functional classes
+   it usually has a few if any methods other than getters and setters
+   many DB frameworks use POJO's to read/write to DBs, files, and streams
+
+
+  The record: released in 2016, jdk16 official
+  purpose to replace boilerplate code in POJO but to be more restrictive
+  - a special class that contains data but not meant to be altered
+  - seeks immutability for data and its members
+  - contains fundamental methods such as constructors and getters/setters, all auto-generated
+
+e.g.,                   part in () is called record header that contains record components, a comma delimited list of components
+            implicitely, the below code generates;
+              - a field with the same name and declared type as the record component
+              - a field is declared private and final
+              - a toString method is generated that prints out each attribute in a formatted string
+public record Student(String id, String name, String dateOfBirth, String classList) {}
+
+    - why is a record built to be immutable?
+     its by design. if you want modify data on your class, use POJO.
+     but basically for use cases such as reading from DB/source file, and passing the data around, its safer to use
+     the record since it is immutable
+
+
+What is an annotation?
+   they are a type of metadata used to describe additional information about the code
+   e.g.,
+   @override
+
+   they are more structured , and have more meaning  than comments.
+   can be used by compiler, or other types of pre-processing functions get information about the code
+
+   Overriden method?
+      special method in java, other classes can implement if they use a specific method signature

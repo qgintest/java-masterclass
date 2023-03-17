@@ -1,0 +1,60 @@
+String is a sequence of characters that are ordered and indexed.
+
+index:     0    1    2   3   4   5
+character: N    A    M   E       .
+
+Different categories of methods available for strings
+
+1. Spring Inspection Methods
+   provides info about the string such as
+      length() - returns number of characters in a string
+      isEmpty() returns true if length is zero
+      charAt() returns the character at the index passed
+      indexOf() returns the integer, representing the index of the sequence where the String or character is passed
+      lastIndexOf()returns the last index
+      isBlank() jdk11, returns true if length is zero OR only contains whitespace characters
+
+
+2. Methods for Comparing String values
+    returns boolean with equal() methods
+    contentEquals() true if strings value equal to what is passed. can use any character sequence apart from Strings
+    equals() true if strings value equal to what is passed
+    equalsIgnoreCase() true if strings value equal to what is passed ignoring cases
+    contains()
+    endsWith()
+    startsWith()
+    regionMatches() true if defined sub-regions are matched
+
+
+3. String Manipulation Methods
+    transform string values to another
+    ident() jdk15+, adds or removes spaces from the beginning of lines in multi-line text.
+    strip() - removes whitespace for larger sets
+    stripLeading()
+    stripTrailing()
+    trim() removes whitespace
+    concat() - concates string and returns new String as a result
+    join() - allows multiple string to be concatendated together in a single method, specifying a delimtter
+    repeat() - returns the string repeated by number of times specified in the argument
+    replace() - replaces characters in a string based on a specified character or string
+    replaceAll() - similar to above but based on a regular expression
+    replaceFirst()
+    subString() - returns part of a string specified by index
+
+    Difference between String and StringBuilder
+    String - immutable, always returns new instance of a string and trashes the old instance
+    a.k.a they create new objects in memory and return a reference to the new object.
+
+    StringBuilder - mutuable class that lets us change its text value
+       4 overloaded methods
+          - Pass a string                          new StringBuilder("String")
+          - Pass no args                           new StringBuilder()
+          - Pass an integer                        new StringBuilder(1)
+          - pass another character sequence        new StringBuilder(builder)
+
+       methods also include
+         -delete() - delete  substring using indices or delete a single character
+         -deleteCharAt()
+         -insert() insert text at a specified position
+         -reverse() - you can reverse the order of the characters in the sequence
+         -setLength() - setLength can be used to truncate the sequence or include null sequences to fill out sequence of the length

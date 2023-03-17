@@ -17,3 +17,108 @@
 
 3. how to create an object from a class?
     by using new keyword
+
+
+4. What is inheritance?
+   parent-child hierarchy which let the child inherit or reuse fields and methods of its parent
+   e.g.,
+   Animal   - base class
+         Verterbrates     -sub classes
+               WarmBlooded
+                   Mammal
+                      Dog
+                      Cat
+                   Bird
+               ColdBlooded
+                   Fish
+                      Salmon
+                      GoldFish
+                   Reptiles
+
+   * use class diagrams to design classes before building them
+
+   The below attributes and behaviors can apply to all animal types so we define them in the base class, Animal
+   Animal
+   attributes:
+        type String
+        size String
+        weight double
+   behavior:
+        move
+        make noise
+
+
+what does extends keyword do?
+   specifies the superclass/parent class of the class we are declaring
+
+ what does super keyword do?
+    used to call constructor on the parent/super class
+    java will implicitely do this if there is a default constructor in the super/parent class
+    if there is NO default constructor, then you must explicitely call super() in all your constructors passing the right args
+
+note: all subclasses can execute methods even if its declared on the parent class
+
+
+What is overriding? a.k.a runtime polymorphism or Dynamic method dispatch
+   Overriding is when you create a method in the subclass  which has the same signature as the method in the superclass.
+   why do this? if you want the childsub class to have different behavior in the method then its parent
+   @Override annotation recommended, helps compiler flag override errors if your not properly overriding a method
+
+   3 main uses of overriding a method:
+     1. completely implement diff behavior from what its parent method does
+     2. simply call super class method, which is redundant because it does that anyway
+     3. call parent method AND add additional behavior specific to the sub-class, a.k.a extending functionality
+
+     rules:
+       same name, same args
+       return type can be a subclass of the return type in the parent class
+       canont have a lower access modifier
+       
+
+Overloading
+   same method names, different args being passed.
+      reduces code duplication and allows use of same method name.
+      also called compile time polymorphism
+      can be done in single or sub-classes
+      may or may not have different return types
+      may or may not have different access modifiers
+      may or may not have different checked/unchecked exceptions
+
+  what is polymorphism:
+     - many forms
+
+  what is composition
+    - prereq be familiar with inheritance - a.k.a extends
+
+
+  what is encapsulation
+
+
+
+  what do all classes in java inherit from?
+     they inherit from a single built-in java class called Object. its contained in the java.lang pacakge
+
+difference between this and super
+   super: used to call parent's class members or methods
+       commonly used in method overriding when calling a method with the same name within the subclass
+       super() calls a constructor from a parent class
+       this gets called by java compiler by default if not specified.
+   this: used to call currnet class members or methods. required when we have the same name as a parameter in the instance field
+   cannot use neither on static elements. compile error will be shown
+        this() calls another constructor from another overloaded constructor in the same class
+
+
+what is text-block?
+  released in jdk15, special format for multi-line literals
+
+
+  Escape sequences
+  \t insert a tab
+  \n insert a new line character
+  \" insert a double quote character
+  \\ insert a backslash
+
+  Format specifiers when using printf
+  %[argument_index$][flags][width][.precision]conversion
+
+  %d for decimal integer value
