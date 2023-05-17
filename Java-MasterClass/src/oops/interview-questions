@@ -86,12 +86,52 @@ Overloading
 
   what is polymorphism:
      - many forms
+     - concept of being able to execute different behavior, for different types, which are determined by runtmie
+     - allowed you to write generic code based on base class , or a parent class.
 
   what is composition
     - prereq be familiar with inheritance - a.k.a extends
 
+    - inheritance defines an IS A relationship, (e.g., a computer is a type of product)
+    - composition defines a HAS A relationship  (a personal computer HAS a motherboard, monitor, keyboard)
+    it models parts and those parts make up a whole
+    - a way to make he combination of classes, act like a single cohorent object
+
+     - when designing, look at composition before inheritance
+     composition is more flexible. you can add parts in, remove them, and the changes will less likely have a downstream effect
+
+     composition provides functional reuse outside of the class hierarchy, meaning classes can share attributes & behavior
+     by having similar components instead of inheriting from  parent or base class
+
+    inheritance breaks encapsulation because subclasses may need direct access to a parent's state or behavior
+    - inheritance is less flexible
+    add/remove a class from a hierarchy can impact all subclasses
+    - a new subclass may need functionality/attributes of the parent
 
   what is encapsulation
+      hiding things or making them inaccessible
+      why?
+         - to make interface simpler, hide unnecessary details
+         - to protect the integrity of data on an object, we hide or restrict access to some data and operations
+         - to deoucple the published interface from the internal details of the class, hide names and types of class members
+              published interface is the class members exposed to or can be accessed by calling code
+              API is the public contract that tells us how to use the class
+
+        issues when encapsulation is not used;
+          problem: allowing direct access to data on an object, can potentially bypass checks, and additional processing,
+          your class has in place to manage the data
+
+          problem2: allowing access to fields , means calling code would need to change , when you edit any of the fields
+
+          problem3: ommitting a constructor that would accept initalization data, may mean the calling code is responsible for setting up data on the object
+
+          encourages inter-dependency, or coupling between calling code and the class
+
+          Principles of creating an encapsulated class
+             - create constructors for object init, which enforces that only objects with valid data will get created
+             - use the private access modifier for your fields
+             - use setter and getter methods sparingly, only as needed
+             - use access modifiers that aren't private , only for methods that the calling code needs to use.
 
 
 
@@ -122,3 +162,22 @@ what is text-block?
   %[argument_index$][flags][width][.precision]conversion
 
   %d for decimal integer value
+
+  what is var?
+  keyword that deals with Local Variable Type Inference (java 10)- helps reduce boilerplate code
+  using it makes java figure out compile time type for us.
+     -cannot be used in field declarations on a class
+     -cannot bs used in method signatures either as parameter type or return type
+     -cannot be used w/o an assignment
+     -cannot be null literal
+
+    Differnce between compile time typing vs runtime typing?
+      compile type is the declared type, declared mostly on left side of operator
+      LVTI we don;t declare type, it gets inferred
+
+      runtime type = determined on runtime, on the right side of operator
+
+  what is instanceof keyword? lets you test type of an object or instance
+  e.g., obj instanceof Class
+
+what is pattern matching
