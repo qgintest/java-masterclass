@@ -180,4 +180,14 @@ what is text-block?
   what is instanceof keyword? lets you test type of an object or instance
   e.g., obj instanceof Class
 
-what is pattern matching
+what is pattern matching. regex
+
+what is a package? folder/dir that organizes set of related types
+   - organize classes by functionality, or in relationships
+
+   FQCN: Fully qualified class name: consist of the package name and class name
+
+   * cannot import types from the default package into other classes outside of default package
+
+
+

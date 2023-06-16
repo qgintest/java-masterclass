@@ -1,0 +1,17 @@
+1. Arrays: container that holds multiple values of the same type
+    a data structure that allwos you to store a seqnence of values, all the same type
+
+2. anonymous array initalizer, can only be used in a declaration statement
+int[]array = {1, 2, 3, 4, 5};
+
+3. Enhanced for loop
+   walks through elements one a time from first to last
+
+
+4. java.util.Arrays - package that contains common functionality to work with arrays
+    sorting
+    copying
+    finding/searching elements
+       Sequentially: one element after another
+       Interval: split to smaller sections and test the values at the boundaries
+        binary: intervals continually split in two
